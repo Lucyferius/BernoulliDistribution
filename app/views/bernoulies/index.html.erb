@@ -1,0 +1,322 @@
+<html lang="en">
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="container">
+  <nav>
+    <a href="/" id="logo">
+        <div>
+          Розподіл Бернуллі
+        </div>
+    </a>
+    <ul class="mr-auto">
+      <li><a href="#info">Довідка</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="info" class="modal">
+  <div class="modal__body">
+    <h1>Довідник для користування</h1>
+    <br>
+
+    <div class="modal__content" style="overflow: auto">
+    <p><b>Розподіл Бернуллі</b> — розподіл ймовірностей дискретної випадкової величини, яка набуває значення 1 з імовірністю p та значення 0 з ймовірністю <em>q = 1 - p</em>, тобто, вона є ймовірнісним розподілом будь-якого одиничного експерименту, який ставить так-ні питання.
+    </p>
+
+    <br>
+    <p>У програмі <b>успіхом</b> називається результат з ймовірністю p, а <b>невдачею</b> - результат з ймовірністю <em>q = 1 - p</em>.
+      <br>
+      <b>Область визначення<em> p</em> — [0, 1].</b>
+    </p>
+
+    <br>
+    <p><em>Кількість незалежних експериментів</em> - це кількість експериментів Бернуллі. Наприклад, в експерименті підкидання монеты  (p = 0,5) кількість незалежних експериментів = 1000 означає, що монета буде підкинута 1000 разів з однаковими умовами для кожного експерименту.
+      <br>
+      <b>Область визначення N — [1, 2<sup>32</sup>].</b>
+    </p>
+
+    <br>
+    <p><b>Користування</b>
+      <br>
+      1. Для того щоб розпочати експеримент введіть p та N та натисніть кнопку "Обчислити".
+      <br>
+      2. Результат: графік функції маси ймовірностей (PMF), графік функції розподілу ймовірностей (CDF), таблиця результатів експериментів, таблиця характеристик для розподілу Бернуллі з ймовірністю p.
+    </p>
+    <br>
+    <div>
+      <span>Графік функції маси ймовірностей розраховується за формулою: </span>
+    </div>
+    <img src="https://lh3.googleusercontent.com/d-ol2aTUA53RcCaNe96NCqGvUWViFp-c5fRorm5AZiuh1RbayQUaNGtOWId3W8cjLPfwUpTr8D-GrGScYSCAH8YH2ejXR0UW-bpds7GhRbMJNgCBoMLpyGPcqsrXBlbw-cUaeDvMtA=w2400"/>
+
+    <div>Графік функції розподілу ймовірностей розраховується за формулою:</div>
+    <img src="https://lh3.googleusercontent.com/mN2yIVSlLWf-ZfCjnuEa2WVSk_ooR82Jn8I_qEnSbP6CQJzfXXjbJ4womkSYRr5BI8eByBIyhNvYOA-MDk1ka_fvJ3xgvMaDi-LymaQZRivGIS4Am5fZrbSitwwEOsuHPxyW7gHFRw=w2400" />
+    <br>
+    <p><b>Характеристики Розподілу Бернуллі:</b></p>
+    <div>
+      <span>Середнє (Математичне сподівання):</span>
+      <img style="padding-bottom: 11px" class="vertical-align-center" src="https://lh3.googleusercontent.com/n02aY-_dBG4zQEH7C1csGP8AfTodeB3LfTJngh6A2cmUGYxHkKCbRpIUyKfHYJkAmc5Yctxoi-ROD2ZMtZgj7iK4cw7feSPBoIRVVjGmyeo_vElEWnbS5cFP91odllQtZRpSjR3l0w=w2400">
+    </div>
+    <div>
+        <span>Дисперсія:</span>
+        <img style="padding-bottom: 9px" class="vertical-align-center" src="https://lh3.googleusercontent.com/yCD2O6Y_RDpwcZZyvVeirwgqZ4hYS2M1HrSIvg4XNwXIoTNm2lOXz01tx-0dfps9bAi23u5G1M_tx0807XWIZ-NNdGP0Jj213YLGw-aXenoGazyCuly6SmslQiikgpAJctV97QTXKQ=w2400">
+    </div>
+    <div>
+        <span>Мода:</span>
+        <img class="vertical-align-center" src="https://lh3.googleusercontent.com/A9IohDk3Ojn2KQ5CNCXFgWehhXnTHG4GL6T10rysjqpoQHsY2RiW3gRmOdDj_dBYXftkqXyAXEtK9mEhI8HrsdEf66jr-5dhdLc4JYouIaTN3FZfemulBUqJ9LhcML80VtWCI9IFsg=w2400">
+    </div>
+    <div>
+        <span>Коефіцієнт асиметрії:</span>
+        <img class="vertical-align-center" src="https://lh3.googleusercontent.com/zAFOSJIIKed8RNkmR2HOSpL62CpvPpewfW7Pg33P7X3o7E_NCcFk8r6vPeqZtL-TARVdnVvr7QaTN1TqmIq2AV5ErYnU-U6i4YFiECG-tLW2GiELPXvcSWCU7g0MVACTuqbmfuPxkQ=w2400">
+    </div>
+
+    Щоб експортувати таблиці - натисніть на відповідну кнопку <b>"Експортувати в Excel"</b>
+
+    </div>
+    <div class="modal__footer">
+      Розробник: Людмила Горбачова КС-42
+    </div>
+
+    <a href="#" class="modal__close">Закрити</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<div class="inputs-div">
+    <%= form_for :anything, url: "/" do |form| %>
+
+        <%= form.label "Ймовірність здійснення події (p)", :class => "label-style" %>
+        <br>
+        <div>
+            <%= form.number_field :prob, step: 0.001, :required => true, :class => "form-control"%>
+
+            <% if @prob_error %>
+                <div class="errorMessage display-row">
+                  <%= @prob_error %>
+                </div>
+            <% end %>
+        </div>
+        <%= form.label "Кількість незалежних експериментів", :class => "label-style" %>
+        <br>
+        <div>
+            <%= form.number_field :experiments, min: 1, :required => true, :class => "form-control"%>
+        </div>
+        <%= form.submit "Обчислити", :class => "submitButton"%>
+
+        <div class="successMessage">
+            <% if @message %>
+                <%= @message %>
+            <% end %>
+        </div>
+
+    <% end  %>
+</div>
+
+<% if @prob_and_q_prob_dataset and @q_prob %>
+    <div>
+        <canvas id="myChart" class="chart-background chart-size display-row"></canvas>
+        <canvas id="line-chart" class="chart-background chart-size display-row"></canvas>
+    </div>
+
+  <div class="display-row margin-left">
+      <table id="res-table" >
+        <tr>
+          <th>Метод генерації випадкової величини </th>
+          <th>Кількість експериментів </th>
+          <th>Ймовірність успіху </th>
+          <th>Кількість успіхів </th>
+          <th>Кількість невдач </th>
+          <th>Середнє успіху </th>
+        </tr>
+        <tr>
+            <% @bernoulli_neumann_result.each do |bernoulli_neumann_res| %>
+                <td><%= bernoulli_neumann_res%></td>
+            <% end %>
+        </tr>
+        <tr>
+          <% @bernoulli_inverse_result.each do |bernoulli_inverse_res| %>
+            <td><%= bernoulli_inverse_res%></td>
+          <% end %>
+        </tr>
+        <tr>
+          <% @metropolis_method_result.each do |metropolis_method_res| %>
+            <td><%= metropolis_method_res%></td>
+          <% end %>
+        </tr>
+      </table>
+        <br>
+        <button onclick="exportDataToExcel('res-table', 'statistic')" class="exportButton">Експортувати в Excel</button>
+  </div>
+
+  <div class="display-row margin-left">
+      <table id="success-table" class="margin-top">
+        <tr>
+          <th>Ймовірність успіху </th>
+          <td> <%= @prob %></td>
+        </tr>
+        <tr>
+          <th>Ймовірність невдачі </th>
+          <td> <%= @q_prob %></td>
+        </tr>
+        <tr>
+          <th>Дисперсія </th>
+          <td> <%= @variance %></td>
+        </tr>
+        <tr>
+          <th>Мода </th>
+          <td> <%= @mode %></td>
+        </tr>
+        <tr>
+          <th>Математичне очікування </th>
+          <td> <%= @mean_formal %></td>
+        </tr>
+        <tr>
+          <th>Коефіцієнт асиметрії </th>
+          <td> <%= @skewness %></td>
+        </tr>
+      </table>
+    <br>
+    <button onclick="exportDataToExcel('success-table', 'properties')" class="exportButton">Експортувати в Excel</button>
+  </div>
+
+<% end %>
+
+<script>
+    function exportDataToExcel(table_id, filename = ''){
+        var downloadurl;
+        var fileType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(table_id);
+        var dataHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+        filename = filename?filename+'.xls':'результат.xls';
+        downloadurl = document.createElement("a");
+        document.body.appendChild(downloadurl);
+        if(navigator.msSaveOrOpenBlob)
+        {
+            var blob = new Blob(['\ufeff', dataHTML],
+              {
+                  type:  fileType
+              });
+            navigator.msSaveOrOpenBlob( blob, filename);
+        }
+        else
+        {
+            downloadurl.href = 'data:' + fileType + ', ' + dataHTML;
+            downloadurl.download = filename;
+            downloadurl.click();
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    new Chart(document.getElementById('myChart'), {
+        type: 'bar',
+        data: {
+            labels: ['0', '1'],
+            datasets: [{
+                data: <%= @prob_and_q_prob_dataset %>,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Розподіл ймовірностей (PMF)',
+                    font: {
+                        size: 16
+                    }
+                },
+                legend: {
+                    display: false,
+                },
+            },
+            scales: {
+                y: {
+                    title: {
+                        text: 'Ймовірність (p)',
+                        display: true,
+                        font: {
+                            size: 16
+                        }
+                    },
+                    beginAtZero: true,
+                    min: 0,
+                    max: 1
+                }
+            }
+        }
+    });
+
+    new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+            labels: [-1.0, 0.5, 0.0, 0.5, 1.0, 1.5, 2.0],
+            datasets: [{
+                data: [0, 0, 0, null, null, null, null],
+                borderColor: "#3e95cd",
+                fill: false,
+            }, {
+                data: [null, null, <%= @q_prob %>, <%= @q_prob %>, <%= @q_prob %>, null, null],
+                borderColor: "#8e5ea2",
+                fill: false
+            }, {
+                data: [null, null, null, null, 1, 1, 1],
+                borderColor: "#3cba9f",
+                fill: false
+            }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    title: {
+                        text: 'F(x)',
+                        display: true,
+                        font: {
+                            size: 16
+                        }
+                    },
+                },
+                x: {
+                    title: {
+                        text: 'x',
+                        display: true,
+                        font: {
+                            size: 16
+                        }
+                    }
+                }
+            },
+            spanGaps: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Функція розподілу ймовірностей (CDF)',
+                    font: {
+                        size: 16
+                    }
+                },
+                legend: {
+                    display: false,
+                },
+            },
+        },
+        scales: {
+            y: {
+                type: 'linear',
+                display: true,
+                position: 'left',
+            }
+        }
+    });
+
+</script>

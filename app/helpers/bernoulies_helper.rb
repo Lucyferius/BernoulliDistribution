@@ -1,0 +1,2 @@
+module BernouliesHelper
+end
